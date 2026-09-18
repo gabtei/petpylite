@@ -1,0 +1,1 @@
+Petshop + Python + Sqlite + IA

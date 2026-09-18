@@ -1,0 +1,43 @@
+# =====================================================================
+# GitIgnore - Petpylite Care (Python + SQLite)
+# =====================================================================
+
+# Banco de Dados Local (SQLite)
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Bytecode do Python e Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ambientes Virtuais
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# IDEs, Editores e Sistema Operacional
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Relatórios gerados localmente (mantém a pasta através do .gitkeep)
+relatorios/*.csv
+
+# Logs e Arquivos Temporários
+*.log
+*.tmp
+*.bak

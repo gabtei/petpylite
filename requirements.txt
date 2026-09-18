@@ -1,0 +1,9 @@
+# =====================================================================
+# Dependências do Projeto Petpylite Care
+# =====================================================================
+# O projeto utiliza prioritariamente os módulos nativos da biblioteca padrão
+# do Python (sqlite3, csv, pathlib, typing, sys).
+#
+# A única dependência externa necessária é para execução da suíte de testes:
+pytest>=8.0.0
+

@@ -9,6 +9,16 @@ from pathlib import Path
 import sqlite3
 import sys
 
+# Garante compatibilidade de saída UTF-8 no Windows
+if sys.platform == "win32":
+    try:
+        if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+            sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        if sys.stderr.encoding and sys.stderr.encoding.lower() != "utf-8":
+            sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
+
 # Mapeamento de diretórios usando pathlib (estrutura moderna e independente de SO)
 DIRETORIO_RAIZ = Path(__file__).resolve().parent.parent
 DIRETORIO_DADOS = DIRETORIO_RAIZ / "data"
